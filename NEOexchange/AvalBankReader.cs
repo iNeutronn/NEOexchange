@@ -1,4 +1,6 @@
 ﻿using System.Net;
+using System.IO;
+using System.Text;
 
 namespace NEUexchange
 {
@@ -11,7 +13,10 @@ namespace NEUexchange
             WebClient wc = new WebClient();
             resp = wc.DownloadString("https://ex.aval.ua/personal/everyday/exchange/exchange/");
 
-            id = IndexOf(resp, "<td class=\"name\">Долари&nbsp;США</td>");
+            
+
+
+            id = IndexOf(resp, "<td class=\"name\">");
 
 
             ToBuyAdd(BaseСurrency.USD, NextDigit());
@@ -31,6 +36,7 @@ namespace NEUexchange
             string course = "";
             for (int i = id; resp[i] == ',' | char.IsDigit(resp[i]); i++)
                 course += resp[i];
+            id += course.Length;
             return decimal.Parse(course);
         }
 
