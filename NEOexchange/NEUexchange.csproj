@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Neutron</Authors>
+    <Description>Бібліотека що дозволяє отримувати курси валют з банків України (покищо реалізований тільки приватбанк)</Description>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Copyright>Neutron</Copyright>
+    <AssemblyVersion>0.1.0.0</AssemblyVersion>
+    <FileVersion>0.1.0.0</FileVersion>
+    <NeutralLanguage>en-LS</NeutralLanguage>
+    <PackageLicenseExpression>Використовуючи цю бібліотеку ви погоджуєтеся що C# найкраща мова програмування</PackageLicenseExpression>
+  </PropertyGroup>
+
+</Project>

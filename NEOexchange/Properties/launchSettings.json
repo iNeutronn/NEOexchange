@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "NEUexchange": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Users\\User\\source\\repos\\parsertester\\parsertester\\bin\\Debug\\netcoreapp3.1\\parsertester.exe"
+    }
+  }
+}
