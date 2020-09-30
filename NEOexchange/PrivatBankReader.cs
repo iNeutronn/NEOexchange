@@ -10,9 +10,9 @@ namespace NEUexchange
             string course = "";
             id += teg.Length;
             while (!char.IsDigit(resp[id])) id++;
-            for (int i = id; resp[i]=='.' | char.IsDigit(resp[i]); i++)
+            for (int i = id; resp[i] == '.' | char.IsDigit(resp[i]); i++)
                 course += resp[i];
-            
+
             return decimal.Parse(course.Replace('.', ','));
         }
         public PrivatBankReader() => Refresh();
@@ -25,9 +25,9 @@ namespace NEUexchange
             ToSellAdd(BaseСurrency.USD, Pars("<td id=\"USD_sell\">"));
             ToSellAdd(BaseСurrency.RUB, Pars("<td id=\"RUB_sell\">"));
 
-            ToBuyAdd(BaseСurrency.EUR , Pars("<td id=\"EUR_buy\">"));
-            ToBuyAdd(BaseСurrency.USD , Pars("<td id=\"USD_buy\">"));
-            ToBuyAdd(BaseСurrency.RUB , Pars("<td id=\"RUB_buy\">"));
+            ToBuyAdd(BaseСurrency.EUR, Pars("<td id=\"EUR_buy\">"));
+            ToBuyAdd(BaseСurrency.USD, Pars("<td id=\"USD_buy\">"));
+            ToBuyAdd(BaseСurrency.RUB, Pars("<td id=\"RUB_buy\">"));
         }
     }
 }
